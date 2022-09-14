@@ -45,6 +45,5 @@ public class Main {
             moves = moves - 1;
         }
         System.out.println("It will take at least " + moves + " moves to win");
-        System.out.print(startNum);
     }
 }
