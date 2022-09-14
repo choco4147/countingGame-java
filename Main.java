@@ -21,6 +21,9 @@ public class Main {
         while(startNum > interval) {
             startNum = startNum - (1 + interval);
         }
+        if(startNum <= 0) {
+            startNum = startNum + interval + 1;
+        }
         if(startNum <= interval) {
             System.out.println("The computer will go first to ensure that it will win.");
         }
@@ -42,6 +45,6 @@ public class Main {
             moves = moves - 1;
         }
         System.out.println("It will take at least " + moves + " moves to win");
-        
+        System.out.print(startNum);
     }
 }
